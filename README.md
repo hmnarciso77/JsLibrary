@@ -1,2 +1,0 @@
-# JsLibrary
-Verint JS scripts
