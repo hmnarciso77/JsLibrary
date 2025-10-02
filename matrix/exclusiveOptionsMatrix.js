@@ -1,8 +1,10 @@
+// Exclusive option in a Matrix question (change the number in const exclusiveOption)
+
 $(function () {
   $('input:checkbox').click(function () {
     const qid = $(this).attr("id").split('_')[0];
     const i = $(this).attr("id").split('_')[3];
-    const exclusiveOption = '8'; // Corrigido: nome de variável válido e valor como string
+    const exclusiveOption = '8'; 
 
     if ($(this).attr('id') === `${qid}_A_${exclusiveOption}_${i}`) {
       // Se a opção exclusiva foi clicada, desmarca todas as outras
