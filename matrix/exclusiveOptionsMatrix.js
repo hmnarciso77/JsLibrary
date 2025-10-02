@@ -7,10 +7,10 @@ $(function () {
     const exclusiveOption = '8'; 
 
     if ($(this).attr('id') === `${qid}_A_${exclusiveOption}_${i}`) {
-      // Se a opção exclusiva foi clicada, desmarca todas as outras
+      // If the option is selected, it will unselect all the others
       $(`input[id$="_${i}"]:checkbox`).not(this).prop('checked', false);
     } else {
-      // Se outra opção foi clicada, desmarca a exclusiva
+      // If any other option is selected, it will unselect the exclusive option
       $(`#${qid}_A_${exclusiveOption}_${i}`).prop('checked', false);
     }
   });
