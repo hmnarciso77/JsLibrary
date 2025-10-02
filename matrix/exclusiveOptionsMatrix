@@ -1,0 +1,17 @@
+// exclusive option 8 
+$(function () {
+ 
+$('input:checkbox').click(function(){  
+
+const qid = $(this).attr("id").split('_')[0]; 
+const i = $(this).attr("id").split('_')[3]; 
+const exclusive option = 8;
+
+if( $(this).attr('id') == qid+'_A_'+ exclusive +'_'+i ) {  
+
+$('input[id$="_'+i+'"]:checkbox').not(this).prop('checked', false); } else { $('#'+qid+'_A_8_'+i).prop('checked', false);  
+
+}  
+
+}); 
+}
